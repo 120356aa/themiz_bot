@@ -5,6 +5,9 @@
   "version": "6.0.0",
   "repository": "https://github.com/120356aa/themiz_bot.git",
   "description": "Bubbles discord music bot.",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "start": "node main.js"
   },
