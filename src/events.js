@@ -23,8 +23,6 @@ player.on('channelEmpty', (queue) => {
     queue.metadata.send('Nobody is in the voice channel, leaving the voice channel... ❌');
 });
 
-player.on('queueEnd', (queue) => {
-    setTimeout (_ => {
-        queue.metadata.send('I finished reading the whole queue ✅');
-    }, 600000)
-});
+player.on('queueEnd', (queue) => setTimeout(() => {
+    queue.metadata.send('I finished reading the whole queue ✅');
+}, 600000));
